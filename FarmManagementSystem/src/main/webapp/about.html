@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About us</title>
+  
+  <script src="https://kit.fontawesome.com/78db843ef0.js" crossorigin="anonymous"></script>
+
+<style >
+	body{
+		color: rgb(64, 0, 64);
+		background-image: url(homeimg.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+	
+	*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+:root{
+    --text-color:rgb(0, 0, 0);
+    --hover-color:#25eaf5;
+    --bg-color:#250821;
+    --secon-bg-color:#292e33;
+    --big-font:2.5rem;
+    --normal--font:2rem;
+    --neon-box-shadow:0 0 .5rem #12f7ff;
+    --h2-font:3rem;
+    --font-neon-text-shadow:0 0 10px rgba(18,247,255,0.3),
+    0 0 20px rgba(18,247,255,0.3),
+    0 0 30px rgba(18,247,255,0.3),
+    0 0 40px rgba(18,247,255,0.3),
+    0 0 70px rgba(18,247,255,0.3),
+    0 0 80px rgba(18,247,255,0.3),
+    0 0 100px rgba(18,247,255,0.3),
+    0 0 150px rgba(18,247,255,0.3);
+}
+
+
+header {
+ 
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  border-bottom: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 10%;
+  font-family: "newone";
+}
+
+header.sticky{
+    background: var(--bg-color);
+    border-bottom: 1px solid var(--secon-bg-color);
+    padding: 12px 10%;
+  }
+
+
+span{
+    color: var(--hover-color);
+}
+
+.nav{
+    display:flex;
+
+}
+
+.nav a{
+    color:var(--text-color);
+    font-weight: 500;
+    padding: 10px 20px;
+   
+}
+.nav a:hover{
+    color:var(--hover-color);
+    text-shadow:0 0 10px rgba(18,247,255,0.6),
+    0 0 20px rgba(18,247,255,0.6),
+    0 0 30px rgba(18,247,255,0.6),
+    0 0 40px rgba(18,247,255,0.6),
+    0 0 70px rgba(18,247,255,0.6),
+    0 0 80px rgba(18,247,255,0.6),
+    0 0 100px rgba(18,247,255,0.6),
+    0 0 150px rgba(18,247,255,0.6);
+}
+
+.nav a.active{
+    color: var(--hover-color);
+}
+
+  .bg-skin {
+    background: #0062cc;
+    
+  }
+
+
+  .nav>li>a:hover, .nav>li>a:focus {
+    text-decoration: none;
+    background-color: #251f1f00;
+    /* color: blue; */
+}
+
+.btn-skin {
+  background-color: #0062cc;
+    border-color: #0062cc;
+}
+.box h4 {
+    font-size: 24px;
+    color: white;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+.service-desc h5 {
+    margin-bottom: 10px;
+     color: white;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+footer .widget h5 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: rgb(64, 0, 64);
+}
+
+.intro-content {
+    /*background: url(../img/dummy/bg1.jpg) no-repeat top center;*/
+    
+    padding: 200px 0 60px;
+}
+
+
+.intro-content {
+    
+    padding: 50px 0; /* Adjust top and bottom padding */
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.intro-content h2,
+.intro-content h4,
+.intro-content ul {
+    color: white;
+}
+
+img {
+    margin-top: 20px; /* Add space above the image */
+    margin-bottom: 20px; /* Add space below the image */
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    display: block;
+}
+
+
+
+footer {
+    padding: 30px 0;
+    
+	
+    
+}
+
+
+footer .widget h5,
+footer .widget ul {
+    color: rgb(64, 0, 64);
+    list-style: none;
+}
+
+footer .widget ul li a {
+    color: rgb(64, 0, 64);
+    transition: color 0.3s;
+}
+
+footer .widget ul li a:hover {
+    color: rgb(0, 255, 255);
+}
+
+footer .company-social a {
+    color: rgb(64, 0, 64);
+    transition: color 0.3s;
+}
+
+footer .company-social a:hover {
+    color: #00c6ff;
+}
+
+
+    .company-social {
+        display: flex;
+        justify-content: center; /* Align icons in the center horizontally */
+    }
+
+    .company-social a {
+        margin: 0 10px; /* Add some space between icons */
+        color: #fff;
+        transition: color 0.3s;
+    }
+
+    .company-social a:hover {
+        color: #00c6ff;
+    }
+    #wrapper{
+		text-align: center;
+		justify-content: center;
+		
+	}
+
+    .intro-content{
+		display: flex;
+		margin-inline: auto;
+		padding-left: 15%;
+		color: white;
+	}
+	.lead-list li{
+		color: white;
+	}
+	
+
+
+</style>
+</head>
+
+
+<body>
+<!-- Header Site-->
+	<header>
+		<div class="logo">
+			<h2><span>MSKA</span> FARM MANAGEMENT</h2>
+		</div>
+		<ul class="nav">
+			<li><a href="home.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</header>
+
+
+  <div id="wrapper">
+
+<section id="intro" class="intro"  style="font-family: 'IBM Plex Sans', sans-serif;">
+      <div class="intro-content" style="padding-top: 65px; ">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+				 <img src="aboutimg.png" class="img-responsive" alt="" style="float: right; width: 50%; border-radius: 25px; " />
+            
+              <div class="wow fadeInDown" data-wow-offset="0" data-wow-delay="0.1s ">
+                <h2 style="font-family: 'IBM Plex Sans', sans-serif;color: white">ADMT FARM MANAGEMENT SYSTEM</h2>
+              </div>
+             <div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.1s">
+                <h4 class="h-light" style="font-family: 'IBM Plex Sans', sans-serif;color: #efe1e1">Provide best farm management system for you</h4>
+              </div><br>
+              <div class="well well-trans" style="background:#ffffff00;color: white">
+                <div class="wow fadeInRight" data-wow-delay="0.1s">
+
+                  <ul class="lead-list">
+                    <li><span style="color: white; height: 22px;" class="fa fa-check-square-o fa-2x icon-success"></span> <span style="color: white;" class="list"><strong>It manages all the information about farm, cost, range, pesticides digitally</strong></span></li><br>
+                    <li><span style="color: white;" class="fa fa-check-square-o fa-2x icon-success"></span> <span style="color: white;" class="list"><strong>The purpose of this to build an application program to reduce its manual work for managing the farms, crops, cost, range. </strong></span></li><br>
+                    <li><span style="color: white;" class="fa fa-check-square-o fa-2x icon-success"></span> <span style="color: white;" class="list"><strong>It tracks all the details about the crops, insecticides, pesticides, etc.  requirements</strong></span></li><br>
+                  </ul>
+                  <!--<p class="text-right wow bounceIn" data-wow-delay="0.4s">
+                    <a href="#" class="btn btn-skin btn-lg" style="background:white;color:#006ccf">Learn more <i class="fa fa-angle-right"></i></a>
+                  </p>-->
+                </div>
+              </div>
+
+
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <footer style=" color: rgb(64, 0, 64); padding: 30px 0; display: flex; justify-content: space-around;">
+    <div class="container">
+		<div class="widget">
+                        <h5>About ADMT FARM MANAGEMENT</h5>
+                        <p>The main objective of Farm Management System is to<br> manage the details of employee, plants, medicines and methods</p>
+                    </div>
+                    <div class="widget">
+                        <h5>Information</h5>
+                        <ul>
+                            <li><a href="#" style="color: rgb(64, 0, 64);">Home</a></li>
+                            <li><a href="#" style="color: rgb(64, 0, 64);">Plants</a></li>
+                            <li><a href="#" style="color: rgb(64, 0, 64);">Medicine</a></li>
+                            <li><a href="#" style="color: rgb(64, 0, 64);">Terms & conditions</a></li>
+                        </ul>
+                    </div>
+                   
+	</div>
+	<div class="container">
+		<div class="widget">
+                        <h5>ADMT Farm Management</h5>
+                        <p>It manages all the information about farm, cost, medicines.</p>
+                        <ul>
+                            <li><span  class="fa-stack fa-lg"><i style="color: rgb(64, 0, 64);" class="fa fa-calendar-o fa-stack-1x fa-inverse"></i></span> Monday - Saturday, 8am to 10pm</li>
+                            <li><span class="fa-stack fa-lg"><i style="color: rgb(64, 0, 64);" class="fa fa-phone fa-stack-1x fa-inverse"></i></span> +91 9790 252 810</li>
+                            <li><span class="fa-stack fa-lg"><i style="color: rgb(64, 0, 64);" class="fa fa-envelope-o fa-stack-1x fa-inverse"></i></span> kavinashanmugam@gmail.com</li>
+                        </ul>
+                    </div>
+	</div>
+	<div class ="container">
+		 
+                    <div class="widget">
+                        <h5>Our location</h5>
+                        <p>Salem ,Tamil Nadu</p>
+                    </div><br>
+                    <div class="widget">
+                        <h5>Follow us</h5>
+                        <ul class="company-social">
+                            <li class="social-facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li class="social-twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li class="social-google"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li class="social-vimeo"><a href="#"><i class="fa fa-vimeo-square"></i></a></li>
+                            <li class="social-dribble"><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                        </ul>
+                    </div>
+		
+	</div>
+</footer>
+
+
+
+
+  </div>
+
+
+</body>
+</html>
